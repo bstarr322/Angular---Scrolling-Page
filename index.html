@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="swingLyncApp" ng-controller="landingPageController as controller" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kozinga - Kelvin Kosbab">
+
+    <title>SwingLync</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/angular-carousel.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<link href="css/freezeframe_styles.min.css" rel="stylesheet">
+	
+	<link href="css/custom-modal.css" rel="stylesheet">
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal-vCenter.js"></script>
+
+    <!-- Angular Core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="js/angular-touch.js"></script>
+    <script src="js/angular-carousel.js"></script>
+    <script src="js/angular-scroll.min.js"></script>
+	
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/freezeframe.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2CD2DR');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2CD2DR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="slide-nav-wrapper hidden-xs" ng-show="navShow">
+      <ul class="slider-nav">
+        <li ng-repeat="sl in slides"><a ng-href="#{{sl}}" du-smooth-scroll du-scrollspy></a></li>
+      </ul>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="global-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/SwingLync_Logo_White.png"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#investorModal" role="button" data-toggle="modal">Investors</a></li>
+                    <li><a href="#contactUsModal" role="button" data-toggle="modal">Contact Us</a></li>
+                    <li><a href="img/SwingLync_BrochureTriFold_sm.pdf" download>Download Brochure</a></li>
+                    <li id="nav-order-wrapper">
+                        <span class="order-button">
+                            <a href="#preOrderNowModal" role="button" data-toggle="modal">PRE-ORDER NOW</a>
+                        </span>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <div class="main-slide-container">
+        <section id="intro-header">   
+            <div class="container-fluid" style="position: relative; width: 100%; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 text-center">
+                        <h1 class="section-header">IMMEDIATE SWING IMPROVEMENT</h1>
+						<p class="section-content">An effective, easy-to-use, and affordable wearable swing measurement technology for everyday golfers</p>
+						<div class="button-container row hidden-xs hidden-sm center-block section-content">
+	                        <span class="order-button">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                        </span>
+	                        <span class="basic-button">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">Learn how SwingLync works</a>
+	                        </span>
+						</div>
+						<div class="row center-block hidden-xs hidden-sm">
+							<div class="col-sm-3 text-center">
+								<h3 class="section-header">EFFECTIVE</h3>
+								<p class="section-content reduced">Measure, compare, and improve your body positioning to increase the power and efficiency of your swing</p>
+							</div>
+							<div class="col-sm-1 text-center">
+								<img class="img-responsive center-block vertical-seperator-line" src="img/Vertical-Black-Line.png" alt="">
+							</div>
+							<div class="col-sm-4 text-center">
+								<h3 class="section-header">EASY-TO-USE</h3>
+								<p class="section-content reduced">Providing easy-to-implement feedback on the 4 most critical elements of the swing</p>
+							</div>
+							<div class="col-sm-1 text-center">
+								<img class="img-responsive center-block vertical-seperator-line" src="img/Vertical-Black-Line.png" alt="">
+							</div>
+							<div class="col-sm-3 text-center">
+								<h3 class="section-header">AFFORDABLE</h3>
+								<p class="section-content">$299</p>
+							</div>
+						</div>
+						<div class="row center-block hidden-xs hidden-sm section-content">
+							<img class="img-responsive center-block sensors-image" src="img/Section1Sensors.png" alt="">
+						</div>
+                    </div>
+	                <div class="col-lg-3 col-md-3" id="intro-mobile">
+	                    <img class="img-responsive" src="img/Shoulder_Rotation_iphone6splussilver_portrait.png" alt="">
+	                </div>
+                </div>
+				<div class="row hidden-md hidden-lg inline-button-container">
+					<div class="col-xs-12 col-sm-12 text-center">
+	                    <span class="order-button large">
+	                        <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                    </span>
+					</div>
+				</div>
+				<div class="row hidden-md hidden-lg center-block">
+					<div class="col-sm-4 text-center">
+						<h3 class="section-sub-heading">EFFECTIVE</h3>
+						<p class="section-content">Measure key body positions and compare your data to the pros</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<h3 class="section-sub-heading">EASY-TO-USE</h3>
+						<p class="section-content">Intuitive training system that teaches a simplified swing</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<h3 class="section-sub-heading">AFFORDABLE</h3>
+						<p class="section-content">$299</p>
+					</div>
+				</div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.intro-header -->
+		
+        <section id="content-section-c">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        <h2 class="section-header">WEARABLE TECHNOLOGY MEASURES YOUR BODY</h2>
+                        <p class="section-content">3 tiny sensors fixed to your back, waist, and wrist</p>
+                        <div class="pouch-bag">
+                            <img class="img-responsive center-block" src="img/Section2SensorsHarness.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-c -->
+		
+        <section id="content-section-l">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        <h2 class="section-header">THE 4 MOST CRITICAL SWING ELEMENTS</h2>
+                        <p class="section-content">The golf swing is an infinitely complex biomechanical motion, but not all elements of the swing are equally important. SwingLync isolates the 4 most critical elements of an effective golf swing. Industry professionals know these elements to be the foundation of a powerful, efficient, and consistent swing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-l -->
+		
+        <section id="content-section-g">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-8 col-sm-offset-2 content-section-g-inner">
+						<br class="hidden-sm hidden-xs"/><br class="hidden-sm hidden-xs"/><br class="hidden-sm hidden-xs"/>
+                        <h2 class="section-header">SWINGLYNC MAKES PRACTICING WORTH YOUR TIME</h2>
+						<p class="section-content">Many golfers gain minimal value from their practice, spending hours at the range aimlessly hitting balls, reinforcing flawed body mechanics with no direction on how to improve their swing.</p>
+						<p class="section-content">Our system provides custom feedback on YOUR swing, along with easy-to-implement feedback. Now you can spend your limited practice time focusing on the elements of your swing that require the most attention.</p>
+						<p class="section-content">Stop wasting time practicing aimlessly, and start experiencing meaningful movement.</p>
+						<div class="row section-content text-center hidden-xs hidden-sm">
+	                        <span class="order-button center-block">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                        </span>
+						</div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 text-center" style="height: 700px;">
+                        <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-deep-watch rn-carousel-buffered rn-carousel-auto-slide="4" class="mobile_images section-g-swing-img-container" style="height: 700px;">
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/1.png" alt="">
+	                            </div>
+							</li>
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/2.png" alt="">
+	                            </div>
+							</li>
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/3.png" alt="">
+	                            </div>
+							</li>
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/4.png" alt="">
+	                            </div>
+							</li>
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/5.png" alt="">
+	                            </div>
+							</li>
+							<li>
+	                            <div class="layer">
+	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/6.png" alt="">
+	                            </div>
+							</li>
+                        </ul>
+                    </div>
+					<div class="col-sm-8 col-sm-offset-1 hidden-md hidden-lg">                        
+						<div class="row section-content text-center">
+	                        <span class="order-button center-block">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                        </span>
+						</div>
+					</div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-g -->
+		
+        <section id="content-section-e">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-sm-12 text-center">
+                        <h2 class="section-header">MEASURE, COMPARE, IMPROVE</h2>
+                        <p class="section-content">Compare your data to the ideal target positions of a powerful and efficient golf swing. Immediately increase your distance and consistency.</p>
+                        <img class="img-responsive center-block golfer-img-red" src="img/golfer-red-75.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-e -->
+		
+        <section id="content-section-b">
+            <div class="container">
+                <div class="row hidden-xs hidden-sm swing-measurements-wide">
+                    <div class="col-md-8 col-lg-8">
+                        <h2 class="section-header">REAL-TIME DATA MEASUREMENTS</h2>
+                        <p class="section-content">We collect real-time, continuous swing data and isolate the four most meaningful moments of the swing. This provides a simple, common-sense training process that is extremely effective</p>
+                    </div>
+                </div>
+				<div class="row hidden-md hidden-lg">
+                    <div class="col-xs-11 col-xs-offset-1 col-sm-11 col-sm-offset-1">
+                        <h2 class="section-header">REAL-TIME DATA MEASUREMENTS</h2>
+                        <p class="section-content">We collect real-time, continuous swing data and isolate the four most meaningful moments of the swing. This provides a simple, common-sense training process that is extremely effective</p>
+                    </div>
+				</div>
+				<div class="row hidden-md hidden-lg swing-measurements-portrait">
+					<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
+						<img class="img-responsive center-block" src="img/SwingMeasurements_PORTRAIT_wText.png" alt="">
+					</div>
+				</div>
+				<div class="row section-content text-center">
+                    <span class="order-button center-block">
+                        <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+                    </span>
+				</div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-b -->
+		
+        <section id="content-section-f">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-sm-12 text-center">
+                        <hr/>
+                        <h2 class="section-header">SWINGLYNC IS DESIGNED TO HELP GOLFERS OF ALL SKILL LEVELS</h2>
+                        <p class="section-content">Our system sets unique swing goals that are tailor-made for your unique skill level. It doesn’t matter if you are an aspiring pro, or a passionate hacker, SwingLync will help you quickly improve.</p>
+                        <img class="img-responsive center-block section-f-slider" src="img/section-f-slider.png" alt="">
+                        <hr/>
+						<div class="row section-content text-center">
+	                        <span class="order-button center-block">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                        </span>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-f -->
+
+        <section id="content-section-a">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <h2 class="section-header">IDEAL BODY POSITIONING IS THE KEY TO ADDING POWER AND CONSISTENCY TO YOUR GAME</h2>
+                        <p class="section-content">Why is it that all professionals position their body similarly at the moment of impact? Its because proper body positioning is the key to developing a powerful, efficient, and consistent golf swing.  Common flaws such as under rotation, or standing up in your swing are preventing you from experiencing meaningful gains in distance and accuracy.</p>
+						<h2 class="section-header">PROs PRACTICE THESE ELEMENTS, NOW YOU CAN TOO</h2>
+						<br/>
+						<div class="row section-content text-center row col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block">
+		                    <span class="order-button">
+		                        <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+		                    </span>
+						</div>
+						<br class="hidden-lg hidden-md"/><br  class="hidden-lg hidden-md"/>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-10 col-sm-offset-1 col-xs-6 col-xs-offset-3">
+						<img class="img-responsive center-block swing-image" src="img/Picture at Impact.jpg" alt="">
+					</div>
+				</div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-a -->
+		
+        <section id="content-section-k">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        <h2 class="section-header">NOW IS THE TIME TO IMPROVE</h2>
+                        <p class="section-content">Life is too short to waste playing bad golf</p>
+						<div class="row section-content text-center">
+	                        <span class="order-button center-block">
+	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
+	                        </span>
+						</div>
+						<img class="img-responsive center-block intro-golfer-image" src="img/intro_Harness_swinganalysis.png" alt="">
+						<img class="img-responsive center-block logo-img" src="img/SwingLync_Logo_White.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-k -->
+    </div>
+
+    <!-- Staging -->
+
+    <div id="swingLyncDreamModal" class="modal fade custom-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <section id="content-section-j">
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-offset-1 col-sm-12 text-center">
+                                <h2 class="section-heading">THE SWINGLYNC DREAM</h2>
+                                <p class="section-content">
+                                    At SwingLync we have one goal, to make golf a fun and enjoyable experience.
+                                </p>
+                                <p class="section-content">
+                                    Getting better at golf is tough. Too often we end our round feeling more frustrated than happy. We are on a mission to change that.
+                                </p>
+                                <p class="section-content">
+                                    With the help of SwingLync we can finally end your frustration and help you begin enjoying this wonderful game.
+                                </p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="investorModal" class="modal fade custom-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">INTERESTED IN INVESTING</h2>
+                </div>
+                <div class="modal-body custom-modal-body">
+                    <p class="section-content">
+						SwingLync is pursuing outside investors to provide financial resources to help accelerate (SwingLync's) our speed to market. WE are open to strategic partnerships with interested parties that believe in our mission.
+						<br/><br/>
+						If you would like to learn more, please send an email directly to <a href="mailto:nick.mahowald@swinglync.com">nick.mahowald@swinglync.com</a>.
+                    </p>
+					<img class="img-responsive center-block custom-modal-img" src="img/SwingLync_Logo_White.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div id="contactUsModal" class="modal fade custom-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">CONTACT US</h2>
+                </div>
+                <div class="modal-body custom-modal-body">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center">
+		                    <p class="section-content detail">
+								If you have questions, comments or feedback please message us and we will be sure to get back to you right away!
+		                    </p>
+						</div>
+					</div>
+                    <div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 custom-modal-info">
+							<div class="text-center">
+								<h4 class="section-header">EMAIL</h4>
+								<p class="section-content"><a href="mailto:info@swinglync.com">info@swinglync.com</a></p>
+							</div>
+							<div class="text-center">
+								<h4 class="section-header">TELEPHONE</h4>
+								<p class="section-content">(612) 356-2736</p>
+							</div>
+							<div class="text-center">
+								<h4 class="section-header">ADDRESS</h4>
+								<p class="section-content">481 Burlington Road, St. Paul, MN 55119</p>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div id="preOrderNowModal" class="modal fade custom-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header custom-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">SWINGLYNC COMING SOON...</h2>
+                </div>
+                <div class="modal-body custom-modal-body">
+                    <p class="section-content">SwingLync is in the final stages of development and will be available for purchase in the coming months!</p>
+					<p class="section-content">SIGN UP NOW to receive important updates and be the first in line to purchase your SwingLync system.</p>
+					<p class="section-content">Limited quantity available.</p>
+					<p class="section-content">Sign up today sending an email to <a href="mailto:info@swinglync.com">info@swinglync.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- ./Staging ENDS -->
+
+    <script>
+        var swingLyncApp = angular.module('swingLyncApp',['ngAnimate', 'duScroll', 'angular-carousel']);
+        var OFFSET = 50;
+
+        swingLyncApp.controller("landingPageController",function($scope, $document, $window){
+            $scope.slides = ["content-section-c", "content-section-l", "content-section-g", "content-section-e", "content-section-b", "content-section-f", "content-section-a", "content-section-k"];
+            $scope.navShow = false;
+            var $mobImage = null;
+				
+            // adjust the height of the mobile image carousel in the right panel to the image height inside it
+            var resizeCarousel = function() {
+				return
+                if ($mobImage === null) {
+                    $mobImage = document.getElementsByClassName('section-g-swing-img')[0];
+                }
+                angular.element(document.getElementsByClassName('mobile_images')[0]).height(angular.element($mobImage).height());
+            }
+
+            angular.element($window).bind('resize', function() {
+                resizeCarousel();
+            });
+
+            $document.on('scroll', function() {
+                var introSection = angular.element(document.getElementById('intro-header'));
+                $scope.navShow = introSection.outerHeight() - OFFSET - 5 <= $document.scrollTop();
+                $scope.$apply();
+
+                resizeCarousel();
+            });
+
+            $scope.scrollDown = function() {
+                var contentSectionB = angular.element(document.getElementById('content-section-b'));
+                $document.scrollToElement(contentSectionB, OFFSET, 1000);
+            }
+			
+			// Swing motion FreezeFrame
+			//var swingMotionFF = new freezeframe('.swinglync-gif').capture().setup();
+			
+			$scope.onTouchstart = function() {
+			//   swingMotionFF.release(); // release animation
+			}
+			
+			$scope.onTouchend = function() {
+			   //swingMotionFF.trigger(); // trigger animation
+			}
+			
+        })
+        .value('duScrollOffset', OFFSET)
+        .value('duScrollDuration', 1000);
+    </script>
+</body>
+
+</html>

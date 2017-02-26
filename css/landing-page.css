@@ -1,0 +1,794 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*
+ * Common Fonts styling
+ */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Century Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2 {    
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Century Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+p.reduced {
+    font-weight: 200;
+    font-size: 11pt;
+}
+
+@media (max-width:991px) {
+    h2 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    p {
+        font-size: 9pt;
+    }
+}
+
+@media (max-width:767px) {
+    h2 {
+        font-size: 14pt;
+    }
+}
+
+h1, h2.section-heading, h3.section-sub-heading, p.section-content, div.section-content {
+    margin-bottom: 30px;
+}
+
+@media (max-width:991px) {
+	h1, h2.section-heading, h3.section-sub-heading, p.section-content, div.section-content {
+	    margin-bottom: 15px;
+	}
+}
+
+section hr {
+    border-top: 2px solid #bfbfbf;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.vertical-seperator-line {
+	margin-top: 35px;
+	max-height: 90px;
+	vertical-align: middle;
+}
+
+a[href^="mail"] {
+	color: #5FB77D;
+}
+
+/* Scroll-down button */
+.scroll-down {
+    background: url("../img/icons/ic_arrow_drop_down.png") no-repeat, url("../img/icons/ic_arrow_drop_down.png") no-repeat;
+    background-size: 18px 9px;
+    background-position: left 5px, right 5px;
+    padding: 0px 23px;
+    cursor: pointer;
+}
+
+/* Basic Button */
+
+.basic-button a {
+    color: #000;
+    font-size: 7pt;
+    text-decoration: none; 
+    padding: 5px 10px; 
+}
+
+.basic-button a:hover, .basic-button a:focus {
+    color: #888;
+}
+
+.basic-button a.button-big {
+    font-size: 14pt;
+    padding: 5px 30px; 
+}
+
+@media (max-width:1199px) {
+    .basic-button a.button-big {
+        font-size: 11pt;
+    }
+}
+
+/* Order Button */
+.order-button, .watch-button, .basic-button {
+    margin: 15px 0;
+}
+
+.order-button a {
+    color: #ffffff;
+    font-size: 7pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #57c08b; 
+    padding: 5px 10px; 
+    border-radius: 15px;
+}
+
+.order-button input {
+    color: #ffffff;
+    font-size: 7pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #57c08b; 
+    padding: 5px 10px; 
+    border-radius: 15px;
+}
+
+.order-button a:hover, .order-button a:focus {
+    color: #888;
+}
+
+.order-button input:hover, .order-button input:focus {
+    color: #888;
+}
+
+.order-button a.button-big {
+    font-size: 14pt;
+    padding: 5px 30px; 
+}
+
+@media (max-width:1199px) {
+    .order-button a.button-big {
+        font-size: 11pt;
+    }
+}
+
+.button-container span {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.button-container div {
+	border-left: solid #000;
+	border-right: solid #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+/* Watch Video Button */
+.watch-button a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14pt;
+    padding: 5px 0px 5px 35px;
+    border-radius: 15px;
+    background: url("../img/icons/Play.png") no-repeat;
+    background-size: 30px 30px;
+}
+
+.watch-button a:hover, .watch-button a:focus {
+    color: #888;
+}
+
+@media (max-width:1199px) {
+    .watch-button a {
+        font-size: 11pt;
+        background-size: 27px 27px;
+    }
+}
+
+
+
+/* 
+ * Content begins 
+ */
+section {
+    padding: 50px 0;
+}
+
+@media (max-width: 1199px) {
+	section, #intro-header, #content-section-l {
+		padding: 0px 0;
+		padding-top: 0px;
+	}
+}
+
+/*
+ * Navigation
+ */
+.navbar-custom {
+    background-color: #262C39;
+    border-color: #a0a0a0;
+    min-height: 70px;
+	margin-bottom: 5px;
+}
+
+.navbar-brand {
+    padding: 15px 15px;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-custom .navbar-nav>li {
+    max-width: 120px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+	min-height: 70px;
+}
+
+.navbar-custom .navbar-nav>li>a {
+    color: #fff;
+    font-size: 10pt;
+    padding: 15px 10px;
+}
+
+.navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus {
+    background-color: transparent;
+    color: #888;
+}
+
+/*
+ * Intro header
+ */
+#intro-header {
+	background-color: #C1C6D4;
+    /* background: url(../img/bg-intro-header.jpg) no-repeat center top; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 0px;
+    padding-top: 100px;
+}
+
+@media (max-width: 1199px) {
+	#intro-header {
+		padding: 50px 0;
+	}
+}
+
+#intro-header .logo img {
+    width: 80%;
+    max-width: 500px;
+}
+
+#intro-header .intro-golfer-image {
+    max-width: 410px;
+    width: 100%;
+}
+
+#intro-header .sensors-image {
+	min-height: 275px;
+}
+
+#intro-header #intro-mobile {
+/*    position: absolute; 
+    bottom: 0;
+    right: 3%;
+    width: 30%;*/
+	display: block;
+	margin: auto;
+    max-width: 360px;
+}
+
+.centered-element {
+	display: block;
+	margin: auto;
+}
+
+#intro-header #intro-mobile .bottom-left {
+    position: absolute;
+    bottom: -5%;
+    left: -10%;
+    width: 50%;
+}
+
+#intro-header #intro-mobile .bottom-right {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 50%;
+}
+
+.inline-button-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*
+ * Section A
+ */
+#content-section-a {
+    background-color: #000;
+    color: #ffffff;
+    padding-bottom: 0;
+}
+
+#content-section-a img {
+    max-width: 450px;
+    width: 900%;
+}
+
+@media (max-width:767px) {
+    #content-section-a img {
+        width: 100%;
+    }
+}
+
+/*
+ * Section B
+ */
+#content-section-b {
+    background: #475467;
+}
+
+#content-section-b img.golfer-img {
+    max-width: 350px;
+    width: 60%;
+}
+
+@media (max-width:767px) {
+    #content-section-b img.golfer-img {
+        width: 80%;
+    }
+}
+
+#content-section-b p, #content-section-b h1, #content-section-b h2, #content-section-b h3, #content-section-b h4 {
+	color: #fff;
+}
+
+#content-section-b .swing-measurements-wide {
+	background: url(../img/SwingMeasurements_WIDE_wText.png) no-repeat center center;
+    -webkit-background-size: 800px;
+    -moz-background-size: 800px;
+    -o-background-size: 800px;
+    background-size: 800px;
+	min-height: 750px;
+}
+
+/*
+ * Section C
+ */
+#content-section-c {
+    background-color: #5db67d;
+}
+
+#content-section-c .pouch-bag img {
+    width: 80%;
+    max-width: 700px;
+}
+
+#content-section-c .bluetooth img {
+    width: 80%;
+    max-width: 240px;
+}
+
+@media (max-width:767px) {
+    #content-section-c .pouch-bag img {
+        width: 100%;
+    }
+
+    #content-section-c .bluetooth img {
+        width: 100%;
+    }
+}
+
+/*
+ * Section D
+ */
+#content-section-d .section-d-bottom {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #57c08b;
+    border-radius: 50px;
+    padding: 10px 15px 0px 15px;
+    color: #fff;
+}
+
+#content-section-d p.position-name {
+    font-size: 8pt;
+}
+
+#content-section-d p.position-angle {
+    font-size: 13pt;
+}
+
+#content-section-d .video-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width:650px) { /* custom breakpoint */
+    #content-section-d .section-d-bottom {
+        width: 90%;
+    }
+
+    #content-section-d .video-content {
+        width: 90%;
+    }
+}
+
+@media (max-width:991px) { 
+    #content-section-d p.position-name {
+        font-size: 6pt;
+    }
+
+    #content-section-d p.position-angle {
+        font-size: 10pt;
+    }
+}
+
+/*
+ * Section E
+ */
+#content-section-e {
+    background: url(../img/bg-section-e.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#content-section-e img.golfer-img-red {
+    width: 75%;
+    max-width: 550px;
+}
+
+@media (max-width:991px) {
+    #content-section-e img.golfer-img-red {
+        width: 90%;
+    }
+}
+
+/*
+ * Section F
+ */
+
+#content-section-f .section-f-slider {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+/*
+ * Section G
+ */
+#content-section-g {
+    padding-bottom: 10px;
+    background: url(../img/bg-section-a.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#content-section-g .section-g-swing-img 
+{
+    width: 80%;
+    max-width: 380px;
+}
+
+#content-section-g .content-section-g-inner img {
+	max-width: 80px;
+}
+
+#content-section-g ul.measurement-list {
+	background: #2D3140;
+	border-radius: 25px;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#content-section-g ul.measurement-list li {
+	color: #fff;
+}
+
+#content-section-g ul.measurement-list p {
+	font-size: 11pt;
+}
+
+/*
+#content-section-g .content-section-g-inner {
+    padding-top: 10%;
+    padding-bottom: 10%; 
+}
+
+@media (max-width:991px) {
+    #content-section-g .content-section-g-inner {
+        padding: 10px 10px;
+    }
+}
+
+*/
+
+#content-section-g p.app-store-link {
+    font-size: 11pt;
+    margin: 20px 0;
+}
+
+#content-section-g a.scroll-down {
+    color: #000;
+}
+
+/*
+ * Section H
+ */
+#content-section-h {
+    padding: 50px 0 0 0;
+    color: #000;
+}
+
+#content-section-h .section-h-col {
+    text-align: left;
+}
+
+#content-section-h ul.feature-list {
+    padding: 50px 20px;
+    list-style: none;
+}
+
+@media (max-width:991px) {
+    #content-section-h ul.feature-list {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width:767px) {
+    #content-section-g .feature-list-wrapper {
+        text-align: left;
+    }
+
+    #content-section-h ul.list-spacing-2 li, ul.list-spacing-3 li {
+        margin-bottom: 20px;
+    }
+
+    #content-section-h .section-h-col {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    #content-section-h ul.list-spacing-2 li {
+        margin-bottom: 80px;
+    }
+
+    #content-section-h ul.list-spacing-3 li {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #content-section-h ul.list-spacing-2 li {
+        margin-bottom: 100px;
+    }
+
+    #content-section-h ul.list-spacing-3 li {
+        margin-bottom: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #content-section-h ul.list-spacing-2 li {
+        margin-bottom: 200px;
+    }
+
+    #content-section-h ul.list-spacing-3 li {
+        margin-bottom: 100px;
+    }
+}
+
+/*
+ * Section I
+ */
+#content-section-i {
+    background-color: #000;
+    padding: 5% 0 10% 0;
+    color: #FFFFFF;
+}
+
+#content-section-i .logo {
+    margin-top: 50px;
+}
+
+#content-section-i .logo img {
+    max-width: 350px;
+    width: 100%;
+}
+
+/*
+ * Section J
+ */
+#content-section-j {
+    background: url(../img/bg-section-j.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    padding: 5% 0 20% 0;
+    color: #595959;
+}
+
+/* Slider Nav */
+.slide-nav-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  position: fixed;
+  right: 25px;
+  z-index:99999;
+}
+
+ul.slider-nav {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-50%);
+  top: 40%;
+}
+
+ul.slider-nav>li {
+  text-align: center;
+  padding: 8px 0;
+  height: 10px;
+}
+
+ul.slider-nav>li a {
+  background: url(../img/icons/circle.png) no-repeat;
+  width: 9px;
+  height: 9px;
+  background-position: 0 0;
+  display: block;
+}
+
+ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
+  background: url(../img/icons/circle-active.png) no-repeat;
+}
+
+.modal p {
+    font-size: 11pt;
+}
+
+/*
+ * Section K
+ */
+
+#content-section-k {
+    background: url(../img/bg-intro-header.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#content-section-k .intro-golfer-image {
+    max-width: 410px;
+    width: 80%;
+	margin-top: 50px;
+}
+
+#content-section-k .logo-img {
+    position: absolute;
+    bottom: 10%;
+    width: 75%;
+	left: 0%;
+	right: 0%;
+    max-width: 700px;
+}
+
+/*
+ * Section L
+ */
+
+#content-section-l {
+    background: url(../img/IMG_5564_BW_Copypoints.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+	min-height: 800px;
+}
+
+@media (max-width: 1199px) {
+	#content-section-l  {
+		padding: 0px 0;
+		min-height: 600px;
+	}
+}
+
+#content-section-l .intro-golfer-image {
+    max-width: 410px;
+    width: 100%;
+	margin-top: 50px;
+}
+
+/*
+ * Navigation bar
+ */
+.navbar-toggle {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #eee;
+}
+
+@media (max-width:767px) {
+    .navbar-custom .navbar-nav>li {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .navbar-custom .navbar-nav>li>a {
+        padding: 10px 15px;
+    }
+
+    .navbar-custom .navbar-nav>li#nav-order-wrapper {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        padding: 12px 15px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar-toggle {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 7px 8px;
+    }
+
+    .navbar-custom {
+        min-height: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-custom .navbar-nav {
+        display: table;
+    }
+
+    .navbar-custom .navbar-nav>li>a {
+        height: 70px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .navbar-custom .navbar-nav>li#nav-order-wrapper>span {
+        height: 70px;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0px 5px;
+    }
+}
+
+.mobile_images {
+    width: 100%;
+}

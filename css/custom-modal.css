@@ -1,0 +1,121 @@
+.custom-modal {
+	
+}
+
+/* MARK: - Modal Header */
+
+.custom-modal-header {
+	color: #fff;
+	border-bottom:1px solid #262C39;
+	background-color: #262C39;
+}
+
+.custom-modal-header h1, .custom-modal-header h2, .custom-modal-header h3, .custom-modal-header h4, .custom-modal-header h5 {
+	text-align: center;
+}
+
+.custom-modal-header .close {
+	color: #fff;
+	opacity: 1;
+}
+
+/* MARK: - Modal Body */
+
+.custom-modal-body {
+	color: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom:1px solid #262C39;
+	background-color: #262C39;
+}
+
+.custom-modal-body p {
+	text-align: center;
+}
+
+/* MARK: - Modal Footer */
+
+.custom-modal-footer {
+	color: #fff;
+	background-color: #262C39;
+}
+
+/* MARK: - Modal Helpers */
+
+.custom-modal-img {
+	width: 70%;
+}
+
+/* MARK: - SwingLync Info */
+
+.custom-modal-info div {
+	height: 75px;
+}
+
+.custom-modal-info h1, .custom-modal-info h2, .custom-modal-info h3, .custom-modal-info h4, .custom-modal-info h5{
+	text-align: center;
+}
+
+.custom-modal-info p {
+	margin-bottom: 10px;
+	font-size: 8pt;
+}
+
+/* MARK: - Sign Up Now */
+
+.custom-modal-sign-up {
+	width: 50%;
+}
+
+/* MARK: - Forms */
+
+.custom-modal-form p {
+	text-align: left;
+}
+
+.custom-modal-form detail {
+	text-align: center;
+}
+
+.custom-modal-form input {
+	margin-bottom: 10px;
+	width: 100%;
+	color: black;
+}
+
+.custom-modal-form textarea {
+	margin-bottom: 10px;
+	width: 100%;
+	color: black;
+}
+
+.custom-form-submit {
+	width: 200px;
+}
+
+.custom-form-submit .order-button {
+	margin: 0 auto;
+	width: 100px;
+}
+
+.custom-form-submit input[type=submit] {
+	color: white;
+	font-size: 12pt;
+}
+
+/* Other Custom Styles */
+
+.custom-section-header {
+    font-size: 32pt;
+    font-weight: 500;
+}
+
+.custom-section-content {
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+.custom-section-content.reduced {
+    font-size: 15pt;
+    font-weight: 500;	
+}
