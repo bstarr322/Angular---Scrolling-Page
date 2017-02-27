@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="SWINGLYNC | A wearable swing training technology for everyday golfers
+An effective, affordable and easy-to-use wearable technology that teaches proper body positioning to everyday golfers. Now you can develop a powerful, and consistent golf swing.">
     <meta name="author" content="Kozinga - Kelvin Kosbab">
 
-    <title>SwingLync</title>
+    <title>SWINGLYNC | Wearable training technology</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +87,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#investorModal" role="button" data-toggle="modal">Investors</a></li>
+                    <!-- <li><a href="#investorModal" role="button" data-toggle="modal">Investors</a></li> -->
                     <li><a href="#contactUsModal" role="button" data-toggle="modal">Contact Us</a></li>
                     <li><a href="img/SwingLync_BrochureTriFold_sm.pdf" download>Download Brochure</a></li>
                     <li id="nav-order-wrapper">
@@ -105,7 +106,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 text-center">
                         <h1 class="section-header">IMMEDIATE SWING IMPROVEMENT</h1>
-						<p class="section-content">An effective, easy-to-use, and affordable wearable swing measurement technology for everyday golfers</p>
+						<p class="section-content">An effective, easy-to-use, and affordable wearable swing training technology for everyday golfers</p>
 						<div class="button-container row hidden-xs hidden-sm center-block section-content">
 	                        <span class="order-button">
 	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
@@ -131,7 +132,7 @@
 							</div>
 							<div class="col-sm-3 text-center">
 								<h3 class="section-header">AFFORDABLE</h3>
-								<p class="section-content">$299</p>
+								<p class="section-content big">$299</p>
 							</div>
 						</div>
 						<div class="row center-block hidden-xs hidden-sm section-content">
@@ -200,51 +201,24 @@
         <section id="content-section-g">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-8 col-sm-offset-2 content-section-g-inner">
+                    <div class="col-lg-5 col-md-5 col-sm-8 col-sm-offset-2 content-section-g-inner text-center">
 						<br class="hidden-sm hidden-xs"/><br class="hidden-sm hidden-xs"/><br class="hidden-sm hidden-xs"/>
                         <h2 class="section-header">SWINGLYNC MAKES PRACTICING WORTH YOUR TIME</h2>
-						<p class="section-content">Many golfers gain minimal value from their practice, spending hours at the range aimlessly hitting balls, reinforcing flawed body mechanics with no direction on how to improve their swing.</p>
-						<p class="section-content">Our system provides custom feedback on YOUR swing, along with easy-to-implement feedback. Now you can spend your limited practice time focusing on the elements of your swing that require the most attention.</p>
-						<p class="section-content">Stop wasting time practicing aimlessly, and start experiencing meaningful movement.</p>
-						<div class="row section-content text-center hidden-xs hidden-sm">
+						<p class="section-content">Our system allows you to focus your practice on the most important elements in the golf swing, your body. Fixing your swing’s improper body positioning is the fastest and most efficient way to improve. <b>Stop wasting your limited time by practicing bad habits</b>, and start improving your game by developing a powerful, effective swing.</p>
+						<div class="row section-content hidden-xs hidden-sm">
 	                        <span class="order-button center-block">
 	                            <a href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
 	                        </span>
 						</div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12 text-center" style="height: 700px;">
-                        <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-deep-watch rn-carousel-buffered rn-carousel-auto-slide="4" class="mobile_images section-g-swing-img-container" style="height: 700px;">
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/1.png" alt="">
-	                            </div>
-							</li>
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/2.png" alt="">
-	                            </div>
-							</li>
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/3.png" alt="">
-	                            </div>
-							</li>
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/4.png" alt="">
-	                            </div>
-							</li>
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/5.png" alt="">
-	                            </div>
-							</li>
-							<li>
-	                            <div class="layer">
-	                                <img class="img-responsive center-block section-g-swing-img" src="img/mobile_screens/6.png" alt="">
-	                            </div>
-							</li>
+                        
+                        <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-deep-watch rn-carousel-buffered rn-carousel-auto-slide="4" rn-carousel-indicator class="mobile_images section-g-swing-img-container" style="height: 660px;">
+                            <li ng-repeat="carousel in carousels track by carousel.id" ng-class="'id-' + carousel.id">
+                                <img class="img-responsive center-block section-g-swing-img" ng-src="{{carousel.img}}" alt="#{{carousel.id}}">
+                            </li>
                         </ul>
+                        <div rn-carousel-indicators ng-if="carousels.length > 1" slides="carousels" rn-carousel-index="carouselIndex"></div>
                     </div>
 					<div class="col-sm-8 col-sm-offset-1 hidden-md hidden-lg">                        
 						<div class="row section-content text-center">
@@ -266,6 +240,20 @@
                         <h2 class="section-header">MEASURE, COMPARE, IMPROVE</h2>
                         <p class="section-content">Compare your data to the ideal target positions of a powerful and efficient golf swing. Immediately increase your distance and consistency.</p>
                         <img class="img-responsive center-block golfer-img-red" src="img/golfer-red-75.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.content-section-e -->
+
+        <section id="content-section-t">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-sm-12 text-center">
+                        <h2 class="section-header">TRACK YOUR PROGRESS AS YOU IMPROVE</h2>
+                        <p class="section-content">We record all of your swing data and report it back to you, using crystal clear graphs. Tracking your progress over time helps you see exactly how effective your practice are.</p>
+                        <img class="img-responsive center-block" src="img/Shoulder Rotation Stats.png" alt="Shoulder Rotation">
                     </div>
                 </div>
             </div>
@@ -328,7 +316,7 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                         <h2 class="section-header">IDEAL BODY POSITIONING IS THE KEY TO ADDING POWER AND CONSISTENCY TO YOUR GAME</h2>
-                        <p class="section-content">Why is it that all professionals position their body similarly at the moment of impact? Its because proper body positioning is the key to developing a powerful, efficient, and consistent golf swing.  Common flaws such as under rotation, or standing up in your swing are preventing you from experiencing meaningful gains in distance and accuracy.</p>
+                        <p class="section-content">Why is it that all professionals position their body similarly at the moment of impact? Its because proper body positioning is the key to developing a powerful, efficient, and consistent golf swing. Common flaws such as under rotation, or standing up in your swing are preventing you from experiencing meaningful gains in distance and accuracy. Professionals practice these elements and using SwingLync, now you can too.</p>
 						<h2 class="section-header">PROs PRACTICE THESE ELEMENTS, NOW YOU CAN TOO</h2>
 						<br/>
 						<div class="row section-content text-center row col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block">
@@ -471,8 +459,36 @@
         var swingLyncApp = angular.module('swingLyncApp',['ngAnimate', 'duScroll', 'angular-carousel']);
         var OFFSET = 50;
 
-        swingLyncApp.controller("landingPageController",function($scope, $document, $window){
-            $scope.slides = ["content-section-c", "content-section-l", "content-section-g", "content-section-e", "content-section-b", "content-section-f", "content-section-a", "content-section-k"];
+        swingLyncApp.controller("landingPageController", function($scope, $document, $window){
+            $scope.slides = ["content-section-c", "content-section-l", "content-section-g", "content-section-e", "content-section-t", "content-section-b", "content-section-f", "content-section-a", "content-section-k"];
+
+            $scope.carousels = [
+                {
+                    id: 1,
+                    img: 'http://www.swinglync.com/img/mobile_screens/1.png'
+                },
+                {
+                    id: 2,
+                    img: 'http://www.swinglync.com/img/mobile_screens/2.png'
+                },
+                {
+                    id: 3,
+                    img: 'http://www.swinglync.com/img/mobile_screens/3.png'
+                },
+                {
+                    id: 4,
+                    img: 'http://www.swinglync.com/img/mobile_screens/4.png'
+                },
+                {
+                    id: 5,
+                    img: 'http://www.swinglync.com/img/mobile_screens/5.png'
+                },
+                {
+                    id: 6,
+                    img: 'http://www.swinglync.com/img/mobile_screens/6.png'
+                },
+            ];
+
             $scope.navShow = false;
             var $mobImage = null;
 				
@@ -512,7 +528,6 @@
 			$scope.onTouchend = function() {
 			   //swingMotionFF.trigger(); // trigger animation
 			}
-			
         })
         .value('duScrollOffset', OFFSET)
         .value('duScrollDuration', 1000);

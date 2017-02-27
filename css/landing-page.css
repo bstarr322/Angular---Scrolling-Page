@@ -60,6 +60,10 @@ h1, h2.section-heading, h3.section-sub-heading, p.section-content, div.section-c
     margin-bottom: 30px;
 }
 
+p.section-content.big {
+    font-size: 24px;
+}
+
 @media (max-width:991px) {
 	h1, h2.section-heading, h3.section-sub-heading, p.section-content, div.section-content {
 	    margin-bottom: 15px;
@@ -482,9 +486,8 @@ section {
     background-size: cover;
 }
 
-#content-section-g .section-g-swing-img 
+#content-section-g .section-g-swing-img
 {
-    width: 80%;
     max-width: 380px;
 }
 
@@ -529,6 +532,10 @@ section {
 
 #content-section-g a.scroll-down {
     color: #000;
+}
+
+div.rn-carousel-indicator span {
+    margin: 3px;
 }
 
 /*
@@ -598,6 +605,17 @@ section {
     }
 }
 
+/*
+ * Section T
+ */
+#content-section-t {
+    background-color: #57c08b;
+}
+
+
+#content-section-t img {
+    width: 37vw;
+}
 /*
  * Section I
  */
