@@ -62,10 +62,11 @@
 
 #contactUsModal .modal-body{
 	border-radius: 15px;
+    border: 1px solid #888;
 }
 
 #contactUsModal .contact-form-wrapper {
-    border-right: 1px solid;
+    border-right: 1px solid #888;
     padding-right: 10%;
 }
 
