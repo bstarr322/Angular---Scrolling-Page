@@ -86,6 +86,9 @@ a[href^="mail"] {
 	color: #5FB77D;
 }
 
+.bold {
+    font-weight: bold !important;
+}
 /* Scroll-down button */
 .scroll-down {
     background: url("../img/icons/ic_arrow_drop_down.png") no-repeat, url("../img/icons/ic_arrow_drop_down.png") no-repeat;

@@ -33,6 +33,10 @@
 	text-align: center;
 }
 
+.custom-modal-body p.small {
+	font-size: 10.5px;
+}
+
 /* MARK: - Modal Footer */
 
 .custom-modal-footer {
@@ -48,18 +52,34 @@
 
 /* MARK: - SwingLync Info */
 
-.custom-modal-info div {
-	height: 75px;
+#contactUsModal .modal-content{
+	border-radius: 20px;
 }
 
+#contactUsModal .modal-body{
+	border-radius: 15px;
+}
+.custom-modal-info {
+	border-left: 1px solid;
+}
 .custom-modal-info h1, .custom-modal-info h2, .custom-modal-info h3, .custom-modal-info h4, .custom-modal-info h5{
 	text-align: center;
+}
+
+.custom-modal-info .section {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.custom-modal-info .section p {
+	margin: initial;
 }
 
 .custom-modal-info p {
 	margin-bottom: 10px;
 	font-size: 8pt;
 }
+
 
 /* MARK: - Sign Up Now */
 
