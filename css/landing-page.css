@@ -89,6 +89,13 @@ a[href^="mail"] {
 .bold {
     font-weight: bold !important;
 }
+
+/* Center */
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
 /* Scroll-down button */
 .scroll-down {
     background: url("../img/icons/ic_arrow_drop_down.png") no-repeat, url("../img/icons/ic_arrow_drop_down.png") no-repeat;
@@ -619,6 +626,8 @@ div.rn-carousel-indicator span {
 #content-section-t img {
     width: 37vw;
 }
+
+
 /*
  * Section I
  */
@@ -811,5 +820,37 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
 }
 
 .mobile_images {
+    width: 100%;
+}
+
+
+/* Mailchimp Signup Form */
+#mc_embed_signup{
+    clear:left; 
+}
+#mc_embed_signup .mc-field-group input {
+    background-color: #ffffff;
+    color: #000000;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    background-color: initial;
+    margin: initial;
+}
+#mc_embed_signup .button {
+    background-color: #57c08b;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    height: initial;
+    margin: 0 auto;
+    display: block;
+    margin-top: 12px;
+}
+#mc_embed_signup .asterisk {
+    color: #ffffff;
+}
+#mc_embed_signup #mce-success-response {
+    color: #ffffff;
+    margin-top: initial;
     width: 100%;
 }

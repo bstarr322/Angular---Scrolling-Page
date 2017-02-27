@@ -35,6 +35,7 @@
 
 .custom-modal-body p.small {
 	font-size: 10.5px;
+	margin: initial;
 }
 
 /* MARK: - Modal Footer */
@@ -52,6 +53,9 @@
 
 /* MARK: - SwingLync Info */
 
+#contactUsModal .modal-title {
+	font-size: 24px;
+}
 #contactUsModal .modal-content{
 	border-radius: 20px;
 }
@@ -59,9 +63,12 @@
 #contactUsModal .modal-body{
 	border-radius: 15px;
 }
-.custom-modal-info {
-	border-left: 1px solid;
+
+#contactUsModal .contact-form-wrapper {
+    border-right: 1px solid;
+    padding-right: 10%;
 }
+
 .custom-modal-info h1, .custom-modal-info h2, .custom-modal-info h3, .custom-modal-info h4, .custom-modal-info h5{
 	text-align: center;
 }
