@@ -692,7 +692,7 @@ div.rn-carousel-indicator span {
     width: 37vw;
 }
 
-@media (max-width:768px) {
+@media (max-width:1199px) {
     #content-section-t img {
         width: 50vw;
         margin-bottom: 20px;
