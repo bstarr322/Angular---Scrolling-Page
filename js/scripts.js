@@ -1,10 +1,11 @@
 $(document).ready(function() {
+	// Show SignUpModal after 20s.
 	setTimeout(function() {
 		signUpModal();
-	}, 1000);
+	}, 20000);
 
+	// Hide Success & Error of validation after 5s.
 	$("form .button").on('click', function(e) {
-		// e.stopPropagation();
 		setTimeout(function() {
 			$('.response').fadeOut();
 		}, 5000);
@@ -18,10 +19,12 @@ $(document).ready(function() {
 		}, 5000);
 	});
 
+	// Send SignUp Email, check again !
+	/*
 	$(".email-stay-up form .button").on('click', function(e) {
-		// e.stopPropagation();
-		// e.preventDefault();
-		// signUp();
+		e.stopPropagation();
+		e.preventDefault();
+		signUp();
 	});
 
 	function signUp() {
@@ -41,7 +44,9 @@ $(document).ready(function() {
 			}
 		});
 	}
+	*/
 
+	// Function Group
 	function signUpModal() {
 		$("#signUpModal").modal("show");
 	}
