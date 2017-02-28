@@ -350,6 +350,35 @@ section {
     }
 }
 
+@media (max-width:554px) {
+    #content-section-a h2 {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width:554px) {
+    #content-section-a h2 {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width:414px) {
+    #content-section-a h2 {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width:375px) {
+    #content-section-a h2 {
+        font-size: 8pt;
+    }
+}
+
+@media (max-width:320px) {
+    #content-section-a h2 {
+        font-size: 7pt;
+    }
+}
 /*
  * Section B
  */
@@ -530,6 +559,7 @@ section {
 #content-section-g .email-stay-up form .button {
     margin: 0 auto;
     line-height: 32px;
+    padding: 0 15px;
 }
 
 #content-section-g .email-stay-up form input.email{
@@ -557,14 +587,18 @@ section {
     padding-top: 10%;
     padding-bottom: 10%; 
 }
-
+*/
 @media (max-width:991px) {
-    #content-section-g .content-section-g-inner {
-        padding: 10px 10px;
+    #content-section-g .email-stay-up {
+        margin-top: initial;
     }
 }
 
-*/
+@media (max-width: 414px) {
+    #content-section-g .email-stay-up form .button{
+        margin-left: -15px;
+    }
+}
 
 #content-section-g p.app-store-link {
     font-size: 11pt;
@@ -658,6 +692,12 @@ div.rn-carousel-indicator span {
     width: 37vw;
 }
 
+@media (max-width:768px) {
+    #content-section-t img {
+        width: 50vw;
+        margin-bottom: 20px;
+    }
+}
 
 /*
  * Section I

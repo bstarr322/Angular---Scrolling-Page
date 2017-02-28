@@ -150,97 +150,100 @@
 
 
 /* Sign Up Modal */
-#signUpModal {
+.modal.type-1 {
     width: 100vw;
 }
-#signUpModal .modal-content {
+.modal.type-1 .modal-content {
     width: 350px;
     margin: 0 auto;
     border: 1px solid #888;
     border-radius: initial;
 }
 
-#signUpModal .modal-header,
-#signUpModal .modal-body {
+.modal.type-1 .modal-header,
+.modal.type-1 .modal-body {
 	padding: initial;
 }
-#signUpModal .modal-header .section-header {
+.modal.type-1 .modal-header .section-header {
 	font-size: 21px;
 }
 
-#signUpModal .modal-body .section-content {
+.modal.type-1 .modal-body .section-content {
 	margin: initial;
 	font-size: 11px;
 }
 
-#signUpModal .modal-body .logo img {
+.modal.type-1 .modal-body .logo img {
 	float: right;
 	height: 30px;
     padding: 5px;
     margin-top: 10px;
 }
 
-#signUpModal .modal-body form {
+.modal.type-1 .modal-body #mc_embed_signup form {
     padding: 10px 24px;
 }
-#signUpModal .modal-body form .btn-group {
+.modal.type-1 .modal-body  #mc_embed_signup form .btn-group {
     display: inline-block;
     margin-left: 15px;
 }
-#signUpModal .modal-body form .mc-field-group {
+.modal.type-1 .modal-body  #mc_embed_signup form .mc-field-group {
     width: 200px;
 	min-height: initial;
     padding: initial;
     float: left;
 }
-#signUpModal .modal-body form input.email {
+.modal.type-1 .modal-body  #mc_embed_signup form input.email {
 	background-color: #dddddd;
     font-size: 12px;
 }
-#signUpModal .modal-body form .btn-group .button
+.modal.type-1 .modal-body  #mc_embed_signup form .btn-group .button
 {
     line-height: 29px;
     margin: initial;
     font-size: 14px;
     padding: 0 15px;
 }
+#preOrderNowModal .modal-body  #mc_embed_signup form .btn-group .button {
+	padding: 0 9px;
+}
 
 @media screen and (max-width: 449px) {
-	#signUpModal .modal-content {
+	.modal.type-1 .modal-content {
 	    width: 330px;
 	}
-	#signUpModal .modal-body form {
+	.modal.type-1 .modal-body #mc_embed_signup form {
 	    padding: 10px;
 	}
-	#signUpModal .modal-body form .mc-field-group {
-	    width: 190px;
+	.modal.type-1 .modal-body #mc_embed_signup form .mc-field-group {
+	    width: 200px;
 	}
 
-	#signUpModal .modal-body form .btn-group {
+	.modal.type-1 .modal-body #mc_embed_signup form .btn-group {
 	    display: inline-block;
 	    margin-left: 10px;
 	}
-	#signUpModal #mc_embed_signup_scroll {
+	.modal.type-1 #mc_embed_signup_scroll {
 		text-align: center;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	#signUpModal .modal-content {
+	.modal.type-1 .modal-content {
 	    width: 300px;
 	}
-	#signUpModal .modal-body form {
+	.modal.type-1 .modal-body #mc_embed_signup form {
 	    padding: 10px;
 	}
-	#signUpModal .modal-body form .mc-field-group {
-	    width: 168px;
+	.modal.type-1 .modal-body #mc_embed_signup form .mc-field-group {
+	    width: 180px;
 	}
 
-	#signUpModal .modal-body form .btn-group {
+	.modal.type-1 .modal-body #mc_embed_signup form .btn-group {
 	    display: inline-block;
 	    margin-left: 10px;
 	}
-	#signUpModal #mc_embed_signup_scroll {
+	.modal.type-1 #mc_embed_signup_scroll {
 		text-align: center;
 	}
 }
