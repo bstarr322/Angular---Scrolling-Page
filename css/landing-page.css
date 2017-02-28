@@ -330,6 +330,11 @@ section {
 	margin-bottom: 20px;
 }
 
+#intro-header .easy-to-use {
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
 /*
  * Section A
  */
@@ -824,6 +829,20 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     max-width: 410px;
     width: 100%;
 	margin-top: 50px;
+}
+
+/** 
+ * Setion Testmonials - TM
+ */
+
+#content-section-tm {
+    background: url(../img/bg-section-tm.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: calc(100vh - 70px);
 }
 
 /*
