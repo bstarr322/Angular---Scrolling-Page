@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	setTimeout(function() {
+		signUpModal();
+	}, 1000);
+
 	$("form .button").on('click', function(e) {
 		// e.stopPropagation();
 		setTimeout(function() {
@@ -36,5 +40,9 @@ $(document).ready(function() {
 				console.log('signUp success !');
 			}
 		});
+	}
+
+	function signUpModal() {
+		$("#signUpModal").modal("show");
 	}
 });
