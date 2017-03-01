@@ -30,22 +30,26 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
 	<link href="css/custom-modal.css" rel="stylesheet">
 	
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/modal-vCenter.js"></script>
+    <script src="js/lib/jquery/jquery.js"></script>
 
     <!-- Angular Core JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
-    <script src="js/angular-touch.js"></script>
-    <script src="js/angular-carousel.js"></script>
-    <script src="js/angular-scroll.min.js"></script>
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-animate.js"></script>
+    <script src="js/lib/angular/angular-touch.js"></script>
+    <script src="js/lib/angular/angular-carousel.js"></script>
+    <script src="js/lib/angular/angular-scroll.min.js"></script>
 	
-	<script src="js/imagesloaded.pkgd.js"></script>
-	<script src="js/freezeframe.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap/modal-vCenter.js"></script>
 
+	<script src="js/lib/imagesloaded.pkgd.js"></script>
+	<script src="js/lib/freezeframe.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/swinglync.controller.js"></script>
+
+    <!-- Custom Scripts -->
     <script src="js/scripts.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -248,7 +252,7 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <div id="mce-responses" class="clear">
-                                                    <div class="response error" id="mce-error-response" style="display:none"></div>
+                                                    <div class="response error" id="mce-error-response"  style="display:none"></div>
                                                     <div class="response" id="mce-success-response" style="display:none"></div>
                                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_179d87f4fae653e63e55f69a8_eb21fec863" tabindex="-1" value=""></div>
@@ -332,16 +336,22 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
         <!-- /.content-section-b -->
 		
 
-        <section id="content-section-tm" class="hide">
+        <section id="content-section-tm" ng-if="testmonials">
             <div class="content container">
                 <div class="row">
-                    <div class="col-lg-12 col-sm-12 text-center">
-                        <p class="section-content">“I could see my kid, and wife benefiting from this. It is very<br/> straight-forward and keeps the learning process simple.”</p>
-                        <div class="row section-content text-center">
-                            <span class="order-button center-block">
-                                <a ng-href="#preOrderNowModal" role="button" class="button-big" data-toggle="modal">PRE-ORDER NOW</a>
-                            </span>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+                        <div class="main-content">
+                            <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-deep-watch rn-carousel-buffered rn-carousel-auto-slide="4" rn-carousel-indicator class="mobile_images section-g-swing-img-container" style="height: 50px;">
+                                <li ng-repeat="testmonial in testmonials track by testmonial.id" ng-class="'id-' + testmonial.id">
+                                    <p>&#8220;{{testmonial.val}}&#8221;</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 100px;">
+                    <div class="col-sm-4 text-center" ng-repeat="testmonial in testmonials">
+                        <p class="section-content">&#8220;{{testmonial.val}}&#8221;</p>
                     </div>
                 </div>
             </div>
@@ -577,83 +587,6 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
 	
     <!-- ./Staging ENDS -->
 
-    <script>
-        var swingLyncApp = angular.module('swingLyncApp',['ngAnimate', 'duScroll', 'angular-carousel']);
-        var OFFSET = 50;
-
-        swingLyncApp.controller("landingPageController", function($scope, $document, $window){
-            $scope.slides = ["content-section-c", "content-section-a", "content-section-l",  "content-section-g", "content-section-e", "content-section-t", "content-section-b", "content-section-f", "content-section-k"];
-
-            $scope.carousels = [
-                {
-                    id: 1,
-                    img: 'http://www.swinglync.com/img/mobile_screens/1.png'
-                },
-                {
-                    id: 2,
-                    img: 'http://www.swinglync.com/img/mobile_screens/2.png'
-                },
-                {
-                    id: 3,
-                    img: 'http://www.swinglync.com/img/mobile_screens/3.png'
-                },
-                {
-                    id: 4,
-                    img: 'http://www.swinglync.com/img/mobile_screens/4.png'
-                },
-                {
-                    id: 5,
-                    img: 'http://www.swinglync.com/img/mobile_screens/5.png'
-                },
-                {
-                    id: 6,
-                    img: 'http://www.swinglync.com/img/mobile_screens/6.png'
-                },
-            ];
-
-            $scope.navShow = false;
-            var $mobImage = null;
-				
-            // adjust the height of the mobile image carousel in the right panel to the image height inside it
-            var resizeCarousel = function() {
-				return
-                if ($mobImage === null) {
-                    $mobImage = document.getElementsByClassName('section-g-swing-img')[0];
-                }
-                angular.element(document.getElementsByClassName('mobile_images')[0]).height(angular.element($mobImage).height());
-            }
-
-            angular.element($window).bind('resize', function() {
-                resizeCarousel();
-            });
-
-            $document.on('scroll', function() {
-                var introSection = angular.element(document.getElementById('intro-header'));
-                $scope.navShow = introSection.outerHeight() - OFFSET - 5 <= $document.scrollTop();
-                $scope.$apply();
-
-                resizeCarousel();
-            });
-
-            $scope.scrollDown = function() {
-                var contentSectionB = angular.element(document.getElementById('content-section-b'));
-                $document.scrollToElement(contentSectionB, OFFSET, 1000);
-            }
-			
-			// Swing motion FreezeFrame
-			//var swingMotionFF = new freezeframe('.swinglync-gif').capture().setup();
-			
-			$scope.onTouchstart = function() {
-			//   swingMotionFF.release(); // release animation
-			}
-			
-			$scope.onTouchend = function() {
-			   //swingMotionFF.trigger(); // trigger animation
-			}
-        })
-        .value('duScrollOffset', OFFSET)
-        .value('duScrollDuration', 1000);
-    </script>
     <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>
         (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
