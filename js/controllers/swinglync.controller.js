@@ -4,7 +4,7 @@ var OFFSET = 50;
 swingLyncApp.controller("landingPageController", function($scope, $timeout, $document, $window){
     $scope.slides = ["content-section-c", "content-section-a", "content-section-l",  "content-section-g", "content-section-e", "content-section-t", "content-section-b", "content-section-tm", "content-section-f", "content-section-k"];
 
-    $scope.testmonials = [
+    $scope.testimonials = [
         {
             id: 1,
             val: "SwingLync seems easy to use which is very important to me, as an average golfer."

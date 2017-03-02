@@ -86,8 +86,17 @@ a[href^="mail"] {
 	color: #5FB77D;
 }
 
+/* Font */
 .bold {
     font-weight: bold !important;
+}
+
+/* Color */
+.red {
+    color: red !important;
+}
+.white {
+    color: white !important;
 }
 
 /* Center */
@@ -407,7 +416,7 @@ section {
 }
 
 #content-section-b .swing-measurements-wide {
-	background: url(../img/SwingMeasurements_WIDE_wText.png) no-repeat center center;
+	background: url(../img/SwingMeasurements_WIDE_wText.png) no-repeat 50% 70%;
     -webkit-background-size: 800px;
     -moz-background-size: 800px;
     -o-background-size: 800px;
@@ -541,17 +550,17 @@ section {
 
 #content-section-g .email-stay-up {
     padding: 0 20px;
-    margin-top: 140px;
-    background-color: #2b3241;
+    margin-top: 100px;
+    background-color: #a40000;
     color: #ffffff;
 }
 
 #content-section-g .email-stay-up .section-header{
-    font-size: 24px;
+    font-size: 26px;
 }
 
 #content-section-g .email-stay-up .section-content{
-    font-size: 11px;
+    font-size: 14px;
 }
 
 #content-section-g .email-stay-up form {
@@ -694,13 +703,19 @@ div.rn-carousel-indicator span {
 
 
 #content-section-t img {
-    width: 37vw;
+    width: 33vw;
 }
 
 @media (max-width:1199px) {
     #content-section-t img {
-        width: 50vw;
+        width: 43vw;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #content-section-t img {
+        width: 50vw;
     }
 }
 
@@ -854,11 +869,29 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     margin: 30px 50px;
 }
 
+#content-section-tm .main-content ul {
+    min-height: 80px;
+}
+
+#content-section-tm .main-content ul li{
+    display: flex !important;
+    align-items: center;
+}
+
 #content-section-tm .main-content ul,
 #content-section-tm .main-content li,
 #content-section-tm .main-content p {
-    /*margin: initial;*/
+    margin: initial;
 }
+#content-section-tm .row.section {
+    margin-top: 60px;
+}
+
+#content-section-tm .row.section .section-header {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
 #content-section-tm .section-content {
     color: #ffffff;
     font-size: 14px;
@@ -868,8 +901,12 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
 @media (max-width:767px) { 
     #content-section-tm .main-content {
         margin: initial;
-        padding: 15px 30px;
+        padding: 5px 30px;
     }
+    #content-section-tm .row.section {
+        margin-top: 25px;
+    }
+
 }
 
 /*
@@ -954,6 +991,7 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
     background-color: initial;
     margin: initial;
+    color: #ffffff;
 }
 #mc_embed_signup .button {
     background-color: #57c08b;
