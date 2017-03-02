@@ -145,7 +145,6 @@ a[href^="mail"] {
 
 .order-button a {
     color: #ffffff;
-    font-size: 7pt;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #57c08b; 
@@ -155,7 +154,6 @@ a[href^="mail"] {
 
 .order-button input {
     color: #ffffff;
-    font-size: 7pt;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #57c08b; 
@@ -164,11 +162,11 @@ a[href^="mail"] {
 }
 
 .order-button a:hover, .order-button a:focus {
-    color: #888;
+    background-color: #777;
 }
 
 .order-button input:hover, .order-button input:focus {
-    color: #888;
+    color: #777;
 }
 
 .order-button a.button-big {
@@ -250,11 +248,10 @@ section {
 }
 
 .navbar-brand img {
-    width: 150px;
+    width: 140px;
 }
 
 .navbar-custom .navbar-nav>li {
-    max-width: 120px;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
