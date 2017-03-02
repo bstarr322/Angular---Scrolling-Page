@@ -848,7 +848,7 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
  */
 
 #content-section-tm {
-    background: url(../img/bg-section-tm-.jpg) no-repeat center center;
+    background: url(../img/bg-section-tm.jpg) no-repeat 50% 107%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -893,9 +893,39 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     color: #ffffff;
     font-size: 14px;
     padding: 5px;
+    margin: 30px;
+}
+
+#content-section-tm .testimonial i{
+    transform: rotate(45deg);
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    float: left;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) { 
+    #content-section-tm {
+        background-size: 130%
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 888px) { 
+    #content-section-tm {
+        background-size: 200%
+    }
+}
+
+@media screen and (max-width: 887px) and (min-width: 768px) { 
+    #content-section-tm {
+        background-size: 230%
+    }
 }
 
 @media (max-width:767px) { 
+    #content-section-tm { 
+        background: url(../img/bg-section-tm-mobile.jpg) no-repeat 50% 50%;
+    }
     #content-section-tm .main-content {
         margin: initial;
         padding: 5px 30px;

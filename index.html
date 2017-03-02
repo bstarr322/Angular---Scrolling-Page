@@ -24,6 +24,7 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<link href="css/freezeframe_styles.min.css" rel="stylesheet">
 	
@@ -335,7 +336,7 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
         <!-- /.content-section-b -->
 		
 
-        <section id="content-section-tm" ng-if="testimonials">
+        <section id="content-section-tm">
             <div class="content container">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
@@ -352,14 +353,15 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
                     <div class="col-xs-12 text-center">
                         <h2 class="section-header white">TESTIMONIALS</h2>
                     </div>
-                    <div class="col-sm-4 text-center" ng-repeat="testimonial in testimonials">
+                    <div class="col-sm-4 text-center testimonial" ng-repeat="testimonial in testimonials">
+                        <i class="material-icons">keyboard_arrow_left</i>
                         <p class="section-content">&#8220;{{testimonial.val}}&#8221;</p>
                     </div>
                 </div>
             </div>
             <!-- /.container -->
         </section>
-        <!-- /.content-section-k -->
+        <!-- /.content-section-tm -->
 
 
         <section id="content-section-f">
