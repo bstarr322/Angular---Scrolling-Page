@@ -793,12 +793,17 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
  */
 
 #content-section-k {
+    height: 100vh;
     background: url(../img/bg-intro-header.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     padding-bottom: 30px;
     padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
 #content-section-k .intro-golfer-image {
@@ -880,6 +885,9 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
 #content-section-tm .main-content p {
     margin: initial;
 }
+#content-section-tm .main-content ul li p {
+    font-size: 13pt;
+}
 #content-section-tm .row.section {
     margin-top: 60px;
 }
@@ -890,10 +898,11 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
 }
 
 #content-section-tm .section-content {
+    float: right;
     color: #ffffff;
     font-size: 14px;
-    padding: 5px;
-    margin: 30px;
+    padding: 0 0 0 45px;
+    margin-top: -7px;
 }
 
 #content-section-tm .testimonial i{
@@ -933,7 +942,9 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     #content-section-tm .row.section {
         margin-top: 25px;
     }
-
+    #content-section-tm .section-content {
+        margin-bottom: 20px;
+    }
 }
 
 /*

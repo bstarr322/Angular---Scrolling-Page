@@ -124,7 +124,7 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
 	                            <a ng-href="#content-section-c" du-smooth-scroll du-scrollspy role="button" class="button-big" data-toggle="">Learn how SwingLync works</a>
 	                        </span>
 						</div>
-						<div class="row center-block hidden-xs hidden-sm">
+						<div class="row center-block hidden-xs hidden-sm section-content">
 							<div class="col-sm-4 text-center">
 								<h3 class="section-header">EFFECTIVE</h3>
 								<p class="section-content reduced">Measure, compare, and improve your body positioning to increase the power and efficiency of your swing</p>
@@ -354,8 +354,10 @@ An effective, affordable and easy-to-use wearable technology that teaches proper
                         <h2 class="section-header white">TESTIMONIALS</h2>
                     </div>
                     <div class="col-sm-4 text-center testimonial" ng-repeat="testimonial in testimonials">
-                        <i class="material-icons">keyboard_arrow_left</i>
-                        <p class="section-content">&#8220;{{testimonial.val}}&#8221;</p>
+                        <div class="clearfix">
+                            <div class="pull-left"><i class="material-icons">keyboard_arrow_left</i></div>
+                            <p class="section-content">&#8220;{{testimonial.val}}&#8221;</p>
+                        </div>
                     </div>
                 </div>
             </div>
