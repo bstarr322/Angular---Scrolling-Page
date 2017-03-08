@@ -45,6 +45,10 @@ p.reduced {
         font-size: 12pt;
     }
 
+    h3.section-sub-heading {
+        font-size: 18pt;
+    }
+
     p {
         font-size: 9pt;
     }
@@ -86,9 +90,19 @@ a[href^="mail"] {
 	color: #5FB77D;
 }
 
+/* Offset */
+@media screen and (max-width: 767px) {
+    .col-xs-offset-1-2 {
+        margin-left: 4.17%;
+    }
+}
+
 /* Font */
 .bold {
     font-weight: bold !important;
+}
+.font-17 {
+    font-size: 17px !important;
 }
 
 /* Color */
@@ -103,6 +117,11 @@ a[href^="mail"] {
 .v-center {
     display: flex;
     align-items: center;
+}
+
+/* Margin */
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 /* Scroll-down button */
@@ -140,7 +159,7 @@ a[href^="mail"] {
 
 /* Order Button */
 .order-button, .watch-button, .basic-button {
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .order-button a {
@@ -299,14 +318,11 @@ section {
 }
 
 #intro-header .sensors-image {
-	min-height: 275px;
+	max-width: 760px;
 }
 
 #intro-header #intro-mobile {
-/*    position: absolute; 
-    bottom: 0;
-    right: 3%;
-    width: 30%;*/
+
 	display: block;
 	margin: auto;
     max-width: 360px;
@@ -351,43 +367,55 @@ section {
 }
 
 #content-section-a img {
-    max-width: 450px;
-    width: 900%;
+
 }
 
+@media (min-width: 992px) {
+    #content-section-a h2 {
+        max-width: 720px;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    #content-section-a h2 {
+        max-width: 600px;
+    }
+}
 @media (max-width:767px) {
     #content-section-a img {
         width: 100%;
     }
-}
-
-@media (max-width:554px) {
     #content-section-a h2 {
-        font-size: 13pt;
+        text-align: center;
     }
 }
 
 @media (max-width:554px) {
     #content-section-a h2 {
-        font-size: 12pt;
+        /*font-size: 13pt;*/
+    }
+}
+
+@media (max-width:554px) {
+    #content-section-a h2 {
+        /*font-size: 12pt;*/
     }
 }
 
 @media (max-width:414px) {
     #content-section-a h2 {
-        font-size: 10pt;
+        /*font-size: 10pt;*/
     }
 }
 
 @media (max-width:375px) {
     #content-section-a h2 {
-        font-size: 8pt;
+        /*font-size: 8pt;*/
     }
 }
 
 @media (max-width:320px) {
     #content-section-a h2 {
-        font-size: 7pt;
+        /*font-size: 7pt;*/
     }
 }
 /*
@@ -913,6 +941,7 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     float: left;
 }
 
+
 @media screen and (max-width: 1199px) and (min-width: 992px) { 
     #content-section-tm {
         background-size: 130%
@@ -944,6 +973,21 @@ ul.slider-nav>li a:hover, ul.slider-nav>li a.active {
     }
     #content-section-tm .section-content {
         margin-bottom: 20px;
+    }
+    #content-section-tm .main-content ul li p {
+        font-size: 9pt;    
+    }
+
+}
+
+@media (max-width:320px) { 
+    #content-section-tm .main-content ul li p {
+        font-size: 8pt;    
+    }
+}
+@media (min-width: 768px) {
+    #content-section-tm .testimonial.ng-scope {
+        min-height: 155px;
     }
 }
 

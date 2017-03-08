@@ -154,7 +154,7 @@
     width: 100vw;
 }
 .modal.type-1 .modal-content {
-    width: 350px;
+    width: 500px;
     margin: 0 auto;
     border: 1px solid #888;
     border-radius: initial;
@@ -165,12 +165,13 @@
 	padding: initial;
 }
 .modal.type-1 .modal-header .section-header {
-	font-size: 24px;
+	font-size: 30px;
 }
 
 .modal.type-1 .modal-body .section-content {
-	margin: initial;
-	font-size: 12px;
+	max-width: 400px;
+	margin: 0 auto;
+	font-size: 16px;
 }
 
 .modal.type-1 .modal-body .logo img {
@@ -180,7 +181,13 @@
     margin-top: 10px;
 }
 
+.modal.type-1 .modal-body #mc_embed_signup {
+	margin-top: 30px;
+}
+
 .modal.type-1 .modal-body #mc_embed_signup form {
+    display: flex; 
+    justify-content: center;
     padding: 10px 24px;
 }
 .modal.type-1 .modal-body  #mc_embed_signup form .btn-group {
@@ -188,7 +195,7 @@
     margin-left: 15px;
 }
 .modal.type-1 .modal-body  #mc_embed_signup form .mc-field-group {
-    width: 200px;
+    width: 250px;
 	min-height: initial;
     padding: initial;
     float: left;
@@ -209,9 +216,11 @@
 }
 
 @media screen and (max-width: 449px) {
+
 	.modal.type-1 .modal-content {
 	    width: 330px;
 	}
+
 	.modal.type-1 .modal-body #mc_embed_signup form {
 	    padding: 10px;
 	}

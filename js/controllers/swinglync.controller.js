@@ -11,7 +11,7 @@ swingLyncApp.controller("landingPageController", function($scope, $timeout, $doc
         },
         {
             id: 2,
-            val: "I could see my kid, and wife benefiting from this. It is very straight-forward and keeps the learning process simple.",
+            val: "I could see myself and well as my entire family benefiting from this. It is very straight-forward and keeps the learning process simple."
         },
         {
             id: 3,
